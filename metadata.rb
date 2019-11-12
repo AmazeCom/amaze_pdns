@@ -2,19 +2,12 @@ name 'amaze_pdns'
 maintainer 'Amaze Communication'
 maintainer_email 'admin@amaze.com.au'
 license 'Apache-2.0'
-description 'Installs/Configures amaze_pdns'
-long_description 'Installs/Configures amaze_pdns'
+description 'Installs/Configures PowerDNS'
+long_description 'Installs/Configures PowerDNS'
 version '0.1.0'
-chef_version '>= 13.0'
-
-# The `issues_url` points to the location where issues for this cookbook are
-# tracked.  A `View Issues` link will be displayed on this cookbook's page when
-# uploaded to a Supermarket.
-#
-# issues_url 'https://github.com/<insert_org_here>/amaze_pdns/issues'
-
-# The `source_url` points to the development repository for this cookbook.  A
-# `View Source` link will be displayed on this cookbook's page when uploaded to
-# a Supermarket.
-#
-# source_url 'https://github.com/<insert_org_here>/amaze_pdns'
+supports 'debian', '>= 10'
+chef_version '>= 14.0', '< 15'
+depends 'postgresql', '>= 7.1.4', '< 8'
+depends 'nginx', '>= 10.0.2', '< 11'
+source_url 'https://github.com/AmazeCom/amaze_pdns'
+issues_url 'https://github.com/AmazeCom/amaze_pdns/issues'
